@@ -248,6 +248,7 @@ h2.black {color: #000;}
     color: #FFF;
     background-color: #CB219D;
     font: 22px/75px 'uni_sansheavy_caps';
+    cursor: pointer;
     -webkit-transition: all .2s;
        -moz-transition: all .2s;
         -ms-transition: all .2s;
@@ -406,7 +407,7 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
 
 
 .explain {padding: 75px 0; background-image: url("../images/screen2.jpg");
-background-size: 100%;
+background-size: cover;
 background-repeat: no-repeat;
 background-position: center bottom;
 }
@@ -441,6 +442,7 @@ box-shadow: 4px 0px 15px 0px rgba(0,0,0,0.06);
 .services_service:hover {-webkit-box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6);
 -moz-box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6);
 box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
+.services_service:hover .services_service_head:before {opacity: 1;}
 .services_service:nth-child(1) {z-index: 6;}
 .services_service:nth-child(2) {z-index: 5;}
 .services_service:nth-child(3) {z-index: 4;}
@@ -472,7 +474,12 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
         box-sizing: border-box; display: inline-block; margin-right: 5px; margin-bottom: 2px; vertical-align: middle; border: 2px solid #CB219D; -webkit-border-radius: 50%;
         border-radius: 50%;}
 .services_service_list li strong {font: 20px 'uni_sansheavy_caps';}
-.services_service_head  h3 {font: 30px 'uni_sansheavy_caps'; color: #FFF; position: absolute; bottom: 5%; left: 5%; padding-right: 4%;}
+.services_service_head  h3 {font: 30px 'uni_sansheavy_caps'; color: #FFF; position: absolute; bottom: 5%; left: 5%; padding-right: 4%; z-index: 3;}
+.services_service_head:before {width: 100%; content: ""; display: block; height: 100%; position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index: 1; -webkit-transition: all .2s;
+   -moz-transition: all .2s;
+    -ms-transition: all .2s;
+     -o-transition: all .2s;
+        transition: all .2s; opacity: 0;}
 
 
 .services_service:nth-child(1) .services_service_head {background-image: url("../images/service_icon_1.jpg");}
