@@ -608,19 +608,23 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
    REASONS
    -------------------------------------- */
 .reasons {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 80px;
   background-image: url(../images/pattern.jpg);
   background-repeat: repeat;
+}
+.reasons h2 {
+  line-height: 68px;
 }
 .reasons p {
   color: #fff;
   text-align: left;
   font-size: 14px;
+  margin-top: 13px;
 }
 
 .reasons .flex {
-  margin: 60px 0 30px;
+  margin: 60px 0 15px;
 }
 .reason__box {
   width: 33.33%;
@@ -653,6 +657,7 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
   font-size: 108px;
   text-align: center;
   color: #45a0d0;
+  line-height: normal;
 }
 .reasons .sale h3 {
   text-align: center;
@@ -798,7 +803,7 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
    MAP
    -------------------------------------- */
 #map {
-  padding: 110px 0;
+  padding: 100px 0;
   position: relative;
 }
 #map_canvas {
@@ -817,10 +822,11 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
 .contacts {
   position: relative;
   z-index: 2;
-  width: 495px;
+  width: 465px;
   outline: 30px solid #fff;
+  margin-left: 30px;
   border: 5px solid #ccc;
-  padding: 30px;
+  padding: 25px;
   background-color: #fff;
   text-align: left;
 }
@@ -841,6 +847,7 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
   margin-bottom: 24px;
   font-family: 'robotoregular';
   font-size: 18px;
+  line-height: 20px;
 }
 .contacts ul li.number {
   font-size: 28px;
