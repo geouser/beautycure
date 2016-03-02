@@ -396,7 +396,7 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
 .contacts {
   position: relative;
   z-index: 2;
-  width: 530px;
+  width: 495px;
   outline: 30px solid #fff;
   border: 5px solid #ccc;
   padding: 30px;
@@ -449,6 +449,17 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
   vertical-align: top;
   width: calc(100% - 40px);
 }
+
+.contacts .button_short {
+  width: auto;
+  padding-left: 44px;
+  padding-right: 44px;
+  height: 53px;
+  line-height: 53px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
 
 /* --------------------------------------
    FOOTER
