@@ -26,6 +26,18 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
 
 }
 
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 @font-face {
     font-family: 'robotolight';
@@ -132,7 +144,7 @@ body                          {    margin: 0;
 h1, h2, h3, h4, h5, p         {    margin: 0;}
 h1, h2, h3, h4, h5, button    {    font-family:  'uni_sansheavy_caps';}
 a                             {    text-decoration: none;}
-strong                        {    font-family: 'robotobold';}
+strong                        {    font-family: 'robotobold'; font-weight: normal;}
 ul                            {    padding: 0;}
 *                             {    box-sizing: border-box; outline: 0;}
 *:focus                       {    outline: 0;}
@@ -374,6 +386,95 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------
+   WELLCOME
+   -------------------------------------- */
+.wellcome {
+  padding-top: 70px;
+  color: #fff;
+  background-image: url(../images/wellcome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.wellcome h2 {
+  font-size: 58px;
+  text-align: left;
+  text-transform: uppercase;
+  line-height: 68px;
+}
+.wellcome p {
+  text-align: left;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.gallery {
+  margin-top: 60px;
+}
+.gallery__box {
+  width: 25%;
+  height: 190px;
+  float: left;
+  display: block;
+}
+.gallery__box--width-2x {
+  width: 50%;
+}
+.gallery__box--height-2x {
+  height: 380px;
+}
+
+
+
+
+
+.order_form {
+  padding: 80px 0;
+}
+.order_form .right,
+.order_form .left {
+  width: 50%;
+}
+.order_form .left {
+  text-align: left;
+  color: #fff;
+}
+.order_form .left h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.order_form .left p {
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: 'uni_sansheavy_caps';
+}
+.order_form .left a {
+  font-family: 'open_sansbold';
+  font-size: 43px;
+}
+
+.order_form .right {
+  padding-left: 70px;
+}
+.order_form .right input {
+  width: 100%;
+  height: 55px;
+  margin-bottom: 20px;
+  border: 1px solid #D1D1D1;
+  padding-left: 18px;
+  font-size: 18px;
+  color: #000;
+  font-family: 'robotolight';
+}
+.order_form .right .button_long {
+  height: 70px;
+  line-height: 70px;
+  border: none;
+  font-size: 20px;
+}
+
+/* --------------------------------------
    MAP
    -------------------------------------- */
 #map {
@@ -514,6 +615,11 @@ footer .wrapper {
   font-family: 'bebas_neuebold';
   line-height: 40px;
   margin-bottom: 14px;
+  transition: all 0.3s ease;
+}
+.callback a:hover {
+  color: #26A3E7;
+  border-bottom-color: #26A3E7;
 }
 .callback a[href^=tel] {
   color: #fff!important;
