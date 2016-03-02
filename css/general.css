@@ -405,12 +405,18 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
 
 
 
-.explain {padding: 75px 0;}
+.explain {padding: 75px 0; background-image: url("../images/screen2.jpg");
+background-size: 100%;
+background-repeat: no-repeat;
+background-position: center bottom;
+}
 .explain_wrap {margin-top: 50px;}
 .explain_item {width: 33.33%;
 margin-bottom: 30px;
 text-align: left;
+padding-right: 3%;
 }
+.explain_item img {margin-bottom: 25px;}
 .explain_item h3 {font: 20px 'uni_sansheavy_caps'; margin-bottom: 10px;}
 .explain_item p {font: 13px 'robotolight';}
 
