@@ -37,6 +37,23 @@ jQuery(document).ready(function($) {
     $.magnificPopup.close();
   });
 
+  $('.gallery').magnificPopup({
+    delegate: 'a',
+    type: 'image',
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    modal: false,
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    gallery: {
+      enabled: true,
+      navigateByImgClick: true,
+      preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+    }
+  });
+
 });
 
 
