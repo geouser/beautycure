@@ -574,7 +574,7 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
 .programInfo span {font: 84px 'uni_sansheavy_caps'; color: #FFF; display: inline-block; vertical-align: middle; margin-right: 25px; line-height: 1;}
 
 .additionalText {margin-top: 50px; color: #FFF; font:16px 'robotolight';}
-.action .button_long {margin-top: 25px;}
+.action .button_long {margin-top: 25px; font-size: 32px; font-family: 'bebas_neue_regularregular';}
 /*---------------------------------------------------------------*/
 /* --------------------------------------
    PHOTOFALLERY
