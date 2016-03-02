@@ -528,9 +528,10 @@ border-width: 22.5px 0 22.5px 22px;
 border-color: transparent transparent transparent #fff;
 }
 
-.action_mainInfo        {padding: 0 35px 20px 35px;}
+.action_mainInfo        {padding: 0 35px 20px 35px; background-image: url("../images/lines.png"); background-repeat: no-repeat; background-size: 100% 77%;
+background-position: center bottom;}
 .action_mainInfo p      {color: #FFF; font: 33px 'uni_sansheavy_caps';}
-.action_mainInfo p span {color: #36CDF9; display: block; text-align: center; font-size: 66px;}
+.action_mainInfo p span {color: #36CDF9; display: block; text-align: center; font-size: 72px;}
 
 .deadline      {margin-top: 45px;}
 .deadline span {  font-family: 'robotolight'; font-size: 18px; text-align: center; display: block; color: #FFF;}
@@ -692,19 +693,23 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
    REASONS
    -------------------------------------- */
 .reasons {
-  padding-top: 70px;
+  padding-top: 65px;
   padding-bottom: 80px;
   background-image: url(../images/pattern.jpg);
   background-repeat: repeat;
+}
+.reasons h2 {
+  line-height: 68px;
 }
 .reasons p {
   color: #fff;
   text-align: left;
   font-size: 14px;
+  margin-top: 13px;
 }
 
 .reasons .flex {
-  margin: 60px 0 30px;
+  margin: 60px 0 15px;
 }
 .reason__box {
   width: 33.33%;
@@ -737,6 +742,7 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
   font-size: 108px;
   text-align: center;
   color: #45a0d0;
+  line-height: normal;
 }
 .reasons .sale h3 {
   text-align: center;
@@ -882,7 +888,7 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
    MAP
    -------------------------------------- */
 #map {
-  padding: 110px 0;
+  padding: 100px 0;
   position: relative;
 }
 #map_canvas {
@@ -901,10 +907,11 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
 .contacts {
   position: relative;
   z-index: 2;
-  width: 495px;
+  width: 465px;
   outline: 30px solid #fff;
+  margin-left: 30px;
   border: 5px solid #ccc;
-  padding: 30px;
+  padding: 25px;
   background-color: #fff;
   text-align: left;
 }
@@ -925,6 +932,7 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
   margin-bottom: 24px;
   font-family: 'robotoregular';
   font-size: 18px;
+  line-height: 20px;
 }
 .contacts ul li.number {
   font-size: 28px;
