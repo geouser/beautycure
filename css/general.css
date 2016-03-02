@@ -421,6 +421,24 @@ padding-right: 3%;
 .explain_item p {font: 13px 'robotolight';}
 
 
+
+
+.ourStudioIs {padding: 70px 0; text-align: left;}
+.services_service {width: 33.33%; text-align: left;}
+
+.services_service button {background: none; border: 1px solid #C21F96; width: 90%; height: 55px; line-height: 55px; text-align: center; color: #C21F96; -webkit-transition: none;
+   -moz-transition: none;
+    -ms-transition: none;
+     -o-transition: none;
+        transition: none;all .2s}
+.services_service button:hover {color: #FFF; background-color:  #C21F96;}
+.services_service_head {height: 285px; -webkit-background-size: cover;
+     -o-background-size: cover;
+        background-size: cover;
+        background-position: 50% 50%;
+            }
+.services_service_head  h3 {font: 30px 'uni_sansheavy_caps'; color: #FFF;}
+
 /*---------------------------------------------------------------*/
 /* --------------------------------------
    WELLCOME
