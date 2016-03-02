@@ -528,7 +528,7 @@ border-width: 22.5px 0 22.5px 22px;
 border-color: transparent transparent transparent #fff;
 }
 
-.action_mainInfo        {padding: 0 35px;}
+.action_mainInfo        {padding: 0 35px 20px 35px;}
 .action_mainInfo p      {color: #FFF; font: 33px 'uni_sansheavy_caps';}
 .action_mainInfo p span {color: #36CDF9; display: block; text-align: center; font-size: 66px;}
 
