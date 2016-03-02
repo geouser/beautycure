@@ -219,6 +219,9 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 .flex-around:after,
 .flex-center-all:after                     {  display: none;}
 
+h2 {font: 58px 'uni_sansheavy_caps'; color: #FFF; text-align: left;}
+h2.black {color: #000;}
+
 /* --------------------------------------
    Custom Styles
    -------------------------------------- */
@@ -248,7 +251,7 @@ a[href^=tel]                  {     color:inherit !important; text-decoration:no
 .offer                   {  height: 750px; background-position: 50% 50%;
                       background-repeat: no-repeat;
                       background-size: cover;}
-header                   {  height: 185px;}
+header                      {  height: 185px;}
 .offer_info                 {  height: calc(100% - 185px);}
 
 @media (max-width: 800px) {
@@ -264,34 +267,45 @@ header .wrapper          {   height: 100% }
 
         /* ------- navigation --------- */
 nav                             {
-                                    display: inline-block;
-                                    vertical-align: middle;
+                                    height: 60px;
+                                    width: 100%;
                                 }
 nav li                          {
                                     display: inline-block;
                                     vertical-align: middle;
                                     position: relative;
+                                    height: 100%;
                                 }
 nav li  a                       {
-                                    font: 12px 'Arial';
-                                    font-weight: 700;
-                                    color: #000;
-                                    text-transform: uppercase;
+                                    font: 14px 'uni_sansheavy_caps';
+                                    color: #fff;
                                     display: inline-block;
-                                    padding: 5px 10px;
                                     position: relative;
                                     -webkit-transition: all .3s;
                                     -moz-transition: all .3s;
                                     -ms-transition: all .3s;
                                     -o-transition: all .3s;
                                     transition: all .3s;
+                                    height: 100%;
+                                    border-top: 4px solid transparent;
+                                    line-height: 50px;
                                 }
 nav li:first-child  a           {   margin-left: 0 }
 nav li:last-child  a            {   margin-right: 0 }
+nav li a:hover                  {   border-top: 4px solid #CB219D;}
+
 
 .logo {width: 245px;}
 .logo img {width: 100%;}
 .header_adress {width: 340px; color: #FFF;}
+
+.header_adress p {font: 700 13px 'Open Sans', sans-serif; color: #FFF; margin-bottom: 10px;}
+.header_adress span {font: 14px 'open_sanslight'; color: #FFF;}
+
+.callUs   {color: #fff;}
+.callUs a {font: 30px 'uni_sansheavy_caps'; display: block; color: #FFF; margin-bottom: 20px;}
+.callUs button {background: none; border: 1px solid #fff; height: 45px; text-align: center; width: 255px; color: #FFF; font: 700 16px 'Open Sans'; text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.24); text-transform: uppercase;}
+
 /* ------- menu toggle --------- */
 .menu-button                     {    display: none;}
 .menu-button                     {
@@ -329,7 +343,7 @@ nav li:last-child  a            {   margin-right: 0 }
 
 
 @media (min-width: 600px) {
-    nav                         {   display: inline-block !important;}
+    nav                         {   display: flex !important;}
 }
 @media (max-width: 600px) {
     .menu-button                {    position: fixed;
@@ -362,14 +376,31 @@ nav li:last-child  a            {   margin-right: 0 }
 }
 
 
+
+
 /* -------offerBg-------- */
 .offer_info .wrapper {    height: 100%;}
 .offer_info_text        {
                       display: inline-block;
                       vertical-align: middle;
                   }
-h1                  {font: 62px 'uni_sansheavy_caps'; color: #FFF;}
+h1                  {font: 62px 'uni_sansheavy_caps'; color: #FFF; text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.24); margin-bottom: 10px;}
 h1 + p              {font: 22px 'robotolight'; color: #FFF;}
+
+.offer_info a {margin-top: 80px;}
+
+
+
+
+
+.explain {padding: 75px 0;}
+.explain_wrap {margin-top: 50px;}
+.explain_item {width: 33.33%;
+margin-bottom: 30px;
+text-align: left;
+}
+.explain_item h3 {font: 20px 'uni_sansheavy_caps'; margin-bottom: 10px;}
+.explain_item p {font: 13px 'robotolight';}
 
 
 /*---------------------------------------------------------------*/
