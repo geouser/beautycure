@@ -423,6 +423,85 @@ padding-right: 3%;
 
 /*---------------------------------------------------------------*/
 /* --------------------------------------
+   ORDER_FORM (alone)
+   -------------------------------------- */
+.alone_form {
+  background-image: url(../images/form_alone.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+/* --------------------------------------
+   REASONS
+   -------------------------------------- */
+.reasons {
+  padding-top: 70px;
+  padding-bottom: 80px;
+  background-image: url(../images/pattern.jpg);
+  background-repeat: repeat;
+}
+.reasons p {
+  color: #fff;
+  text-align: left;
+  font-size: 14px;
+}
+
+.reasons .flex {
+  margin: 60px 0 30px;
+}
+.reason__box {
+  width: 33.33%;
+  padding-right: 35px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+.reason__box figure {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+.reason__box figure img {
+  height: 100%;
+  max-width: 100%;
+}
+.reason__box h3 {
+  color: #fff;
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.reason__box p {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+
+.reasons .sale h2 {
+  font-size: 108px;
+  text-align: center;
+  color: #45a0d0;
+}
+.reasons .sale h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 33px;
+}
+.reasons .sale p {
+  text-align: center;
+  font-size: 16px;
+}
+
+.reasons .button_long {
+  margin-top: 60px;
+  font-family: 'bebas_neuebold';
+  font-size: 32px;
+}
+
+
+
+/* --------------------------------------
    WELLCOME
    -------------------------------------- */
 .wellcome {
