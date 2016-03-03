@@ -329,10 +329,13 @@ nav li a:hover                  {   border-top: 4px solid #CB219D;}
 .callUs {width: 27%;}
 .callUs button {width: 100%;}
 .callUs a {font-size: 24px;}
+
+h2 {font-size: 48px;}
 }
 
 @media (max-width:800px) {
 .callUs a {font-size: 22px;}
+h2 {font-size: 42px;}
 }
 
 @media (max-width: 720px) {
@@ -341,6 +344,7 @@ nav li a:hover                  {   border-top: 4px solid #CB219D;}
 .callUs {width: 100%;}
 .callUs button {width: 300px;}
 .callUs a {margin-bottom: 5px; font-size: 32px;}
+h2 {font-size: 38px;}
 }
 
 @media (max-width: 600px) {
@@ -348,6 +352,11 @@ nav li a:hover                  {   border-top: 4px solid #CB219D;}
 .header_adress {width: 90%; margin: 5px auto;}
 header {height: auto;}
 .offer_info                 {  height: calc(100% - 270px);}
+h2 {font-size: 32px; text-align: center;}
+}
+
+@media (max-width: 500px) {
+h2 {font-size: 26px;}
 }
 
 /* ------- menu toggle --------- */
@@ -451,14 +460,10 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
 .header_adress {width: 90%; margin: 5px auto;}
 header {height: auto;}
 .offer_info a {margin-top: 30px;}
-.offer_info                 {  height: calc(100% - 270px);}
-.offer                      {  height: 650px;}
+.offer_info                 {  height: auto; margin-top: 20px;}
+.offer                      {  height: auto; padding: 10px 0 20px 0;}
 }
 
-@media (max-width: 400px) {
-.offer                      {  height: 600px;}
-.offer_info {height: calc(100% - 300px);}
-}
 
 @media (max-width:1000px) {
     h1   {font-size: 56px;}
@@ -502,6 +507,13 @@ padding-right: 2%;
 .explain_item h3 {font: 20px 'uni_sansheavy_caps'; margin-bottom: 10px;}
 .explain_item p {font: 13px 'robotolight';}
 
+
+@media (max-width: 700px) {
+    .explain_item {width: 50%; text-align: center;}
+}
+@media (max-width: 500px) {
+    .explain_item {width: 80%; margin: 20px auto;}
+}
 
 
 
@@ -578,18 +590,35 @@ box-shadow: 0px -4px 35px 0px rgba(0,0,0,0.6); z-index: 7 !important;}
 .ourStudioIs .button_long {margin-top: 30px; font-size: 32px; font-family: 'bebas_neue_regularregular';}
 
 
+@media (max-width: 900px) {
+    .services_service_list {padding: 20px 10px;}
+    .services_service_head h3 {font-size: 24px;}
+}
 
 
 
-
-
+@media (max-width: 750px) {
+    .services_service {width: 50%;}
+    .services_service_head h3 {font-size: 28px;}
+}
+@media (max-width: 550px) {
+    .services_service {width: 80%; margin: 2px auto;}
+    .services_service_list li {width: 100%;}
+}
+@media (max-width: 600px) {
+    .ourStudioIs h2 + p {text-align: center;}
+}
+@media (max-width: 450px) {
+    .services_service {width: 100%;}
+    .services_service_head h3 {font-size: 30px; padding-right: 8%;}
+}
 
 .action {padding: 170px 0 70px; background-image: url("../images/actions_bg.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center center; position: relative;}
 
-.action h2 {background-color: #FFF; color: #000; font-size: 22px; padding-left: 17px; display: inline-block; position: absolute; text-align: center; top: 37px; left: 46%; margin: auto;
+.action h2 {background-color: #FFF; color: #000; font-size: 22px; padding-left: 17px; display: inline-block; position: absolute; text-align: center; top: 37px; left: 50%; margin-left: 22px; margin: auto;
 -webkit-transform: rotate(90deg);
    -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -633,7 +662,7 @@ background-position: center bottom;}
   display: block;
   padding-bottom: 73%;
 }
-.action_more_action h4 {font: 22px 'uni_sansheavy_caps'; color: #FFF; position: absolute; bottom: 3%; left: 15%; padding-right: 4%; z-index: 3;}
+.action_more_action h4 {font: 22px 'uni_sansheavy_caps'; color: #FFF; position: absolute; bottom: 3%; left: 15%; padding-right: 4%; z-index: 3; text-align: left;}
 .action_more_action:before {width: 100%; content: ""; display: block; height: 100%; 
 position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index: 1; -webkit-transition: all .2s;
    -moz-transition: all .2s;
@@ -657,6 +686,60 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
 
 .additionalText {margin-top: 50px; color: #FFF; font:16px 'robotolight';}
 .action .button_long {margin-top: 25px; font-size: 32px; font-family: 'bebas_neue_regularregular';}
+
+
+@media (max-width: 900px) {
+.action_mainInfo p      {font: 28px 'uni_sansheavy_caps';}
+.action_mainInfo p span {font-size: 68px;}
+
+.action_more h3 {width: 95%; font-size: 48px;}
+.action_more_action h4 {font-size: 20px;}
+}
+
+@media (max-width: 750px) {
+.action_mainInfo p      {font: 22px 'uni_sansheavy_caps';}
+.action_mainInfo p span {font-size: 52px;}
+.action_more h3 {font-size: 36px;}
+.action_more .flex-between {-webkit-justify-content: space-around;
+        justify-content: space-around;}
+.action_more_action {width: 300px;}
+.programInfo {text-align: center;}
+    .action_more h3,
+    .programInfo,
+    .programInfo p {text-align: center; width: 100%;}
+    .programInfo span {margin-right: 0;}
+}
+
+@media (max-width: 650px) {
+.action_mainInfo p      {font: 18px 'uni_sansheavy_caps';}
+.action_mainInfo p span {font-size: 36px;}
+.action_mainInfo {padding: 0 15px 10px 15px;}
+.action_mainInfo p br {display: none;}
+.action_more h3 {font-size: 28px;}
+.action_more_action {width: 250px;}
+}
+
+@media (max-width: 550px) {
+    .ourStudioIs .button_long {font-size: 26px;}
+    .action .button_long {font-size: 26px;}
+    .action_mainInfo {background: none; padding: 0;}
+    .action_more_action {width: 300px;}
+
+    .programInfo p {font-size: 24px;}
+    .programInfo span {font-size: 72px;}
+    .additionalText {font-size: 12px;}
+    .deadline .deadline_num {font-size: 56px;}
+
+}
+@media (max-width: 400px) {
+    .ourStudioIs .button_long {font-size: 20px;}
+    .action .button_long {font-size: 20px;}
+    .button, .button_short, .button_long {height: 55px; line-height: 55px;}
+    .programInfo p {font-size: 20px;}
+    .programInfo span {font-size: 72px;}
+    .action_more h3 {font-size: 24px;}
+}
+
 /*---------------------------------------------------------------*/
 /* --------------------------------------
    PHOTOFALLERY
