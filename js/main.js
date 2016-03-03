@@ -61,7 +61,7 @@ jQuery(document).ready(function($) {
   $('.slider').on('init', function(event) {
     event.preventDefault();
     $('.slider').magnificPopup({
-      delegate: 'figure',
+      delegate: 'a',
       type: 'image',
       fixedContentPos: false,
       fixedBgPos: true,
@@ -82,6 +82,15 @@ jQuery(document).ready(function($) {
     infinite: false,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 601,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   })
   
 
