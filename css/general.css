@@ -135,12 +135,11 @@ dl,h3,hr,menu,ol,p,pre,ul{margin:1em 0}hr,img,legend{border:0}body,fieldset,figu
 html, body                    {    height: 100%;}
 body                          {    margin: 0;
                                    padding: 0;
-                                   -ms-overflow-x: hidden;
-                                       overflow-x: hidden;
                                    max-width: 100%;
                                    font-family: 'robotolight';
                                    color: #000;}
-
+section                         {  -ms-overflow-x: hidden;
+                                   overflow-x: hidden; }
 h1, h2, h3, h4, h5, p         {    margin: 0;}
 h1, h2, h3, h4, h5, button    {    font-family:  'uni_sansheavy_caps';}
 a                             {    text-decoration: none;}
@@ -843,7 +842,11 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
     }
 }
 
-
+@media (max-width: 600px) {
+    .photogallery {
+        padding: 40px 0;
+    }
+}
 
 
 
@@ -869,9 +872,6 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
   padding-bottom: 80px;
   background-image: url(../images/pattern.jpg);
   background-repeat: repeat;
-}
-.reasons h2 {
-  line-height: 68px;
 }
 .reasons p {
   color: #fff;
@@ -937,6 +937,10 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
     .reason__box h3 {
         height: 55px;
     }
+
+    .reasons .sale h2 {
+        font-size: 80px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -953,6 +957,19 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
 @media (max-width: 600px) {
     .reason__box {
         padding: 0 15px;
+    }
+    .reasons p {
+        text-align: center;
+    }
+
+    .reasons .sale h2 {
+        font-size: 60px;
+    }
+    .reasons .sale h3 {
+        font-size: 25px;
+    }
+    .reasons .button_long {
+        font-size: 20px;
     }
 }
 
@@ -977,12 +994,6 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-}
-.wellcome h2 {
-  font-size: 58px;
-  text-align: left;
-  text-transform: uppercase;
-  line-height: 68px;
 }
 .wellcome p {
   text-align: left;
@@ -1112,11 +1123,32 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
 }
 
 @media (max-width: 600px) {
+    .wellcome p {
+        text-align: center;
+    }
+
+
+
+    .order_form {
+        padding: 40px 0;
+    }
     .order_form .right form {
         width: 300px;
     }
     .order_form .left a {
         font-size: 30px;
+    }
+    .order_form .left h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .order_form .right input {
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    .order_form .right .button_long {
+        height: 45px;
+        line-height: 45px;
     }
 
     .gallery__box {
