@@ -322,6 +322,34 @@ nav li a:hover                  {   border-top: 4px solid #CB219D;}
 .callUs a {font: 30px 'uni_sansheavy_caps'; display: block; color: #FFF; margin-bottom: 20px;}
 .callUs button {background: none; border: 1px solid #fff; height: 45px; text-align: center; width: 255px; color: #FFF; font: 700 16px 'Open Sans'; text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.24); text-transform: uppercase;}
 
+
+@media (max-width:1000px) {
+.logo {width: 25%;}
+.header_adress {width: 36%;}
+.callUs {width: 27%;}
+.callUs button {width: 100%;}
+.callUs a {font-size: 24px;}
+}
+
+@media (max-width:800px) {
+.callUs a {font-size: 22px;}
+}
+
+@media (max-width: 720px) {
+.logo {width: 35%;}
+.header_adress {width: 60%;}
+.callUs {width: 100%;}
+.callUs button {width: 300px;}
+.callUs a {margin-bottom: 5px; font-size: 32px;}
+}
+
+@media (max-width: 600px) {
+.logo  {width: 200px; margin: 5px auto;}
+.header_adress {width: 90%; margin: 5px auto;}
+header {height: auto;}
+.offer_info                 {  height: calc(100% - 270px);}
+}
+
 /* ------- menu toggle --------- */
 .menu-button                     {    display: none;}
 .menu-button                     {
@@ -353,22 +381,22 @@ nav li a:hover                  {   border-top: 4px solid #CB219D;}
 
 .menu-button.active              {   -webkit-border-radius: 6px;border-radius: 6px;}
 .menu-button.active .top_line    {   transform: rotate(45deg);-webkit-transform: rotate(45deg);top: 45%;}
-.menu-button.active .bottom_line {   transform: rotate(-45deg);-webkit-transform: rotate(-45deg);bottom: 35%;}
+.menu-button.active .bottom_line {   transform: rotate(-45deg);-webkit-transform: rotate(-45deg);bottom: 43%;}
 .menu-button.active .middle_line {   width: 0;left: 50%;}
 
 
 
-@media (min-width: 600px) {
-    nav                         {   display: flex !important;}
+@media (min-width: 650px) {
+    nav                         {   display: flex;}
 }
-@media (max-width: 600px) {
+@media (max-width: 649px) {
     .menu-button                {    position: fixed;
                                      top: 10px;
-                                     right: 20px;
+                                     right: 10px;
                                      margin: auto; 
                                      -webkit-border-radius: 3px;
                                      border-radius: 3px;
-                                     background-color: #313A4D;
+                                     background-color: rgba(38,34,48, 1);
                                      width: 54px;
                                      cursor: pointer;
                                      z-index: 100;
@@ -376,22 +404,34 @@ nav li a:hover                  {   border-top: 4px solid #CB219D;}
                                      display: block;
                                  }
     nav                         {    position: absolute;
-                                     display: none;
                                      top: 0;
-                                     left: 50%;
-                                     margin-left: -50vw;
+                                     left: -100%;
                                      text-align: center;
-                                     background-color: rgba(0,0,0, .9);
+                                     background-color: rgba(38,34,48, .98);
                                      width: 100%;
                                      text-align: center;
                                      margin-top: 0;
                                      border-bottom: 2px solid #fff;
                                      padding: 10px 0;
-                                     margin-top: 39px;
-                                     position: fixed;}
+                                     position: fixed;
+                                     width: 280px;
+                                     height: 100%;
+                                     z-index: 10;
+                                     -webkit-transition: all .2s;
+                                        -moz-transition: all .2s;
+                                         -ms-transition: all .2s;
+                                          -o-transition: all .2s;
+                                             transition: all .2s;
+                                }
+    nav.active                  {  left: 0;}
+    nav li                      {  display: block; width: 100%; height: auto;}
+    nav li  a                   {  border: none; height: auto; line-height: 20px;}
+    nav li  a:hover             {  border: none;}
 }
 
-
+@media (max-width: 400px) {
+    nav                         {   width: 240px}
+}
 
 
 /* -------offerBg-------- */
@@ -406,8 +446,46 @@ h1 + p              {font: 22px 'robotolight'; color: #FFF;}
 .offer_info a {margin-top: 80px;}
 
 
+@media (max-width: 600px) {
+.logo  {width: 200px; margin: 5px auto;}
+.header_adress {width: 90%; margin: 5px auto;}
+header {height: auto;}
+.offer_info a {margin-top: 30px;}
+.offer_info                 {  height: calc(100% - 270px);}
+.offer                      {  height: 650px;}
+}
 
+@media (max-width: 400px) {
+.offer                      {  height: 600px;}
+.offer_info {height: calc(100% - 300px);}
+}
 
+@media (max-width:1000px) {
+    h1   {font-size: 56px;}
+    h1 + p {font-size: 20px;}
+}
+
+@media (max-width: 800px) {
+    h1   {font-size: 48px;}
+    h1 + p {font-size: 18px;}
+}
+@media (max-width: 700px) {
+    h1   {font-size: 42px;}
+    h1 + p {font-size: 16px;}
+    .offer_info_text {width: 100%;}
+}
+@media (max-width: 500px) {
+    h1   {font-size: 36px;}
+    h1 + p {font-size: 14px;}
+    .button_short {width: 90%; font-size: 20px;}
+}
+@media (max-width: 400px) {
+    h1   {font-size: 32px;}
+    .button_short {width: 90%; font-size: 16px; height: 55px; line-height: 55px;}
+}
+@media (max-width: 350px) {
+    h1   {font-size: 28px;}
+}
 
 .explain {padding: 75px 0 50px; background-image: url("../images/screen2.jpg");
 background-size: cover;
