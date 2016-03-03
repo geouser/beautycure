@@ -1055,6 +1055,28 @@ position: absolute; left: 0; top: 0; background-color: rgba(0,0,0, .5); z-index:
   margin-top: 10px;
 }
 
+@media (max-width: 1000px) {
+    #map_canvas {
+        position: static;
+        height: 250px;
+        width: 100%;
+    }
+    #map {
+        padding: 0;
+    }
+    .contacts {
+        width: 100%;
+        outline: none;
+        margin: 10px 0;
+    }
+}
+
+
+
+
+
+
+
 
 /* --------------------------------------
    FOOTER
@@ -1124,4 +1146,37 @@ footer .wrapper {
 .callback p {
   color: #fff;
   font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .bottom_logo {
+        width: 200px;
+    }
+    .callback a {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .socials a {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    footer {
+        height: auto;
+    }
+    .bottom_logo {
+        margin: 0 auto 30px;
+    }
+    .socials {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .callback {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
